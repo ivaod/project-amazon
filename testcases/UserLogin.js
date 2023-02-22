@@ -27,7 +27,7 @@ it("Mouse hover and login", function()
     var  passwordButton= element(by.xpath("//input[@id='ap_password']"));
     passwordButton.sendKeys("valid password");
 
-    signInSubmitButton= element(by.xpath("//input[@id='signInSubmit']"));
+    var signInSubmitButton= element(by.xpath("//input[@id='signInSubmit']"));
     signInSubmitButton.click;
 
     

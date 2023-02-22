@@ -15,15 +15,20 @@ it("Mouse hover and login", function()
 
     browser.actions().mouseMove(helloSignInSection).perform();
 
-    element(by.xpath("//span[@class='nav-action-inner']")).click;
+    var singInButton= element(by.xpath("//span[@class='nav-action-inner']"));
+    singInButton.click;
 
-    element(by.xpath("//*[@id='ap_email']")).sendKeys("valid email or phone number");
+    var emailOrNumberToSignIn= element(by.xpath("//*[@id='ap_email']"));
+    emailOrNumberToSignIn.sendKeys("valid email or phone number");
 
-    element(by.xpath("//input[@id='continue']")).click();
+    var continueButton= element(by.xpath("//input[@id='continue']"));
+    continueButton.click;
 
-    element(by.xpath("//input[@id='ap_password']")).sendKeys("valid password");
+    var  passwordButton= element(by.xpath("//input[@id='ap_password']"));
+    passwordButton.sendKeys("valid password");
 
-    element(by.xpath("//input[@id='signInSubmit']")).click();
+    signInSubmitButton= element(by.xpath("//input[@id='signInSubmit']"));
+    signInSubmitButton.click;
 
     
 
